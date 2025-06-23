@@ -6,46 +6,49 @@ body {
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
   color: #fff;
+  overflow-x: hidden;
 }
 
 .top-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 25px 50px;
 }
 
 .logo {
-  height: 56px;
-  border-radius: 8px;
+  height: 64px;
+  border-radius: 12px;
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 20px;
   text-decoration: none;
-  color: #ddd;
+  color: #d1d5db;
   font-weight: 500;
+  font-size: 1rem;
 }
 
 .dashboard-btn {
-  background: #7c3aed;
+  background-color: #8b5cf6;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 18px;
   border-radius: 10px;
-  border: none;
-  position: relative;
   font-weight: 600;
+  position: relative;
+  border: none;
+  cursor: pointer;
 }
 
 .coming-soon {
-  font-size: 0.7em;
   position: absolute;
   top: -10px;
-  right: -20px;
+  right: -25px;
   background: red;
-  color: white;
-  padding: 2px 6px;
-  border-radius: 5px;
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 3px 7px;
+  border-radius: 6px;
 }
 
 .hero {
@@ -55,9 +58,9 @@ nav a {
 }
 
 .hero h1 {
-  font-size: 3em;
-  line-height: 1.2;
+  font-size: 3.2rem;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .gradient {
@@ -67,50 +70,60 @@ nav a {
 }
 
 .hero p {
-  margin-top: 20px;
-  font-size: 1.1em;
+  max-width: 850px;
+  margin: 20px auto;
+  font-size: 1.1rem;
   color: #e2e8f0;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  line-height: 1.6;
 }
 
 .hero-buttons {
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 .btn {
   padding: 12px 24px;
   border-radius: 8px;
-  text-decoration: none;
   font-weight: 700;
+  font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
   display: inline-block;
 }
 
 .btn.primary {
-  background-color: #0f0f0f;
+  background-color: #000;
   color: #00ffd5;
   border: 2px solid #00ffd5;
+  transition: background 0.2s;
+}
+
+.btn.primary:hover {
+  background: #111;
 }
 
 .feature-badges {
   display: flex;
   justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .badge {
-  background: #1e293b;
+  background-color: #111827;
+  border: 1px solid #334155;
   padding: 10px 16px;
   border-radius: 10px;
-  font-size: 0.9em;
+  font-size: 0.95rem;
   color: #fff;
-  border: 1px solid #334155;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .stats {
   margin-top: 60px;
   color: #cbd5e1;
+  font-size: 1rem;
 }
