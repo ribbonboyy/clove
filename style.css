@@ -4,11 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background: hsla(208, 33%, 21%, 1);
   background: linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
-  background: -moz-linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
-  background: -webkit-linear-gradient(90deg, hsla(208, 33%, 21%, 1) 0%, hsla(211, 36%, 46%, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#243748", endColorstr="#4B749F", GradientType=1);
   color: #fff;
 }
 
@@ -27,13 +23,8 @@ body {
 nav a {
   margin: 0 15px;
   text-decoration: none;
-  color: #eee;
+  color: #ddd;
   font-weight: 500;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #fff;
 }
 
 .dashboard-btn {
@@ -69,10 +60,6 @@ nav a:hover {
   font-weight: 700;
 }
 
-.highlight {
-  color: #ffffff;
-}
-
 .gradient {
   background: linear-gradient(to right, #3be8b0, #5db9f2);
   -webkit-background-clip: text;
@@ -82,7 +69,7 @@ nav a:hover {
 .hero p {
   margin-top: 20px;
   font-size: 1.1em;
-  color: #ddd;
+  color: #e2e8f0;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -96,10 +83,9 @@ nav a:hover {
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: bold;
-  margin: 0 10px;
-  display: inline-block;
+  font-weight: 700;
   font-family: 'Montserrat', sans-serif;
+  display: inline-block;
 }
 
 .btn.primary {
@@ -116,15 +102,15 @@ nav a:hover {
 }
 
 .badge {
-  background: #1c1c1c;
+  background: #1e293b;
   padding: 10px 16px;
   border-radius: 10px;
   font-size: 0.9em;
   color: #fff;
-  border: 1px solid #333;
+  border: 1px solid #334155;
 }
 
 .stats {
   margin-top: 60px;
-  color: #c9d2d9;
+  color: #cbd5e1;
 }
