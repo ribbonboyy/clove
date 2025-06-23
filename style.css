@@ -155,3 +155,27 @@ nav a {
   color: #cbd5e1;
   font-size: 1rem;
 }
+
+.badge-slider {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.badge-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scrollBadges 20s linear infinite;
+}
+
+@keyframes scrollBadges {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
