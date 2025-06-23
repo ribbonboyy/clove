@@ -1,15 +1,21 @@
-/* 🌌 Background and Base Styles */
+/* 🔤 Font Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* 🌌 Background */
 body {
   background: linear-gradient(135deg, #0f172a, #1e1b4b);
   color: #f1f5f9;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
 }
 
-/* 🧊 Top Navigation */
+/* 🧭 Navigation */
 .top-nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,6 +24,12 @@ body {
   backdrop-filter: blur(24px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 0 0 20px 20px;
+  z-index: 1000;
+}
+
+.logo {
+  height: 64px;
+  border-radius: 12px;
 }
 
 nav a {
@@ -32,118 +44,6 @@ nav a:hover {
   color: #fff;
 }
 
-/* 🚀 Hero Section */
-.hero {
-  margin: 80px auto 0;
-  padding: 60px 30px;
-  max-width: 960px;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(30px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 24px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-}
-
-.hero h1 {
-  font-size: 3.4rem;
-  font-weight: 800;
-  margin-bottom: 12px;
-  color: #ffffff;
-}
-
-.gradient {
-  background: linear-gradient(to right, #3be8b0, #5db9f2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  color: #cbd5e1;
-  max-width: 780px;
-  margin: 20px auto;
-  line-height: 1.6;
-}
-
-/* ✨ CTA Button */
-.hero-buttons .btn.primary {
-  background: #262626;
-  color: #ffffff;
-  border: 1px solid #3b82f6;
-  padding: 14px 28px;
-  border-radius: 12px;
-  font-weight: 700;
-  transition: all 0.25s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.hero-buttons .btn.primary:hover {
-  background: #3b82f6;
-  color: #fff;
-  transform: scale(1.04);
-}
-
-/* 🪄 Badges - Upgraded Style */
-.badge {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 10px 18px;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-/* 📜 Badge Carousel Layout */
-.badge-slider {
-  overflow: hidden;
-  width: 100%;
-  padding: 30px 0;
-  margin-top: 50px;
-  position: relative;
-}
-
-.badge-track {
-  display: flex;
-  gap: 20px;
-  width: fit-content;
-  animation: scrollBadges 25s linear infinite;
-}
-
-@keyframes scrollBadges {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.badge {
-  flex-shrink: 0;
-  white-space: nowrap;
-  background: rgba(255, 255, 255, 0.08);
-  padding: 10px 18px;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
-
-
-/* 🧢 Dashboard Button */
 .dashboard-btn {
   background: linear-gradient(135deg, #6b21a8, #7c3aed);
   color: #fff;
@@ -170,4 +70,105 @@ nav a:hover {
   padding: 4px 8px;
   border-radius: 6px;
   box-shadow: 0 2px 10px rgba(239, 68, 68, 0.5);
+}
+
+/* 🌟 Hero */
+.hero {
+  margin-top: 80px;
+  padding: 60px 30px;
+  text-align: center;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 24px;
+  backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.hero h1 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.gradient {
+  background: linear-gradient(to right, #3be8b0, #5db9f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  max-width: 780px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin: 30px 0;
+}
+
+.btn.primary {
+  background: #262626;
+  color: #ffffff;
+  border: 1px solid #3b82f6;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.btn.primary:hover {
+  background: #3b82f6;
+  color: #fff;
+  transform: scale(1.04);
+}
+
+/* 🎠 Badge Slider */
+.badge-slider {
+  overflow: hidden;
+  width: 100%;
+  padding: 30px 0;
+  margin-top: 40px;
+  position: relative;
+}
+
+.badge-track {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  animation: scrollBadges 25s linear infinite;
+}
+
+@keyframes scrollBadges {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.badge {
+  flex-shrink: 0;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
